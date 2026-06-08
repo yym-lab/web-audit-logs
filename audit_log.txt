@@ -1,0 +1,14 @@
+# Web资产审计日志
+生成时间: 2026-06-08 09:02:57
+目标: http://192.168.200.1/DVWA
+发现敏感资产: 4个
+成功收割凭据: 1个
+
+## 敏感路径
+- http://192.168.200.1/DVWA/config/
+- http://192.168.200.1/DVWA/docs/
+- http://192.168.200.1/DVWA/external/
+- http://192.168.200.1/DVWA/vulnerabilities/
+
+## 有效凭据
+1. admin:password
