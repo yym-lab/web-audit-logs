@@ -1,10 +1,19 @@
 # WordPress资产审计日志
-生成时间: 2026-06-15 22:16:00
+生成时间: 2026-06-15 22:21:29
 目标: http://192.168.200.1/wordpress
 本地源码: /root/wordpress
 
-## CSRF Token信息
-- 无
+## ========== CSRF Token信息 ==========
+CSRF Token (_wpnonce): 未提取到
+Session Cookies: {
+  "wordpress_test_cookie": "WP%20Cookie%20check"
+}
+
+## ========== 扫描结果 ==========
+发现敏感文件: 5个
+成功收割凭据: 1个
+随机延时次数: 23次
+429重试次数: 0次
 
 ## 敏感文件列表
 - http://192.168.200.1/wordpress/shell.php
@@ -15,3 +24,6 @@
 
 ## 有效凭据
 1. wp_admin:123456
+
+## 所有提取的CSRF Tokens
+- 无
