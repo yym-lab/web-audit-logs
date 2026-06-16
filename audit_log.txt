@@ -1,7 +1,11 @@
 # WordPress资产审计日志
-生成时间: 2026-06-16 02:54:28
+生成时间: 2026-06-16 03:11:54
 目标: http://192.168.200.1/wordpress
 本地源码: /root/wordpress
+
+## ========== CSRF Token信息 ==========
+Token类型: WordPress
+CSRF Token: dfa7fbb78c
 
 ## ========== 爆破结果 ==========
 总尝试次数: 24
