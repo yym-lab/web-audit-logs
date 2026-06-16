@@ -1,16 +1,18 @@
-# Web资产审计日志
-生成时间: 2026-06-14 23:42:58
-目标: http://192.168.200.1/DVWA
-发现敏感资产: 4个
+# WordPress资产审计日志
+生成时间: 2026-06-15 22:07:14
+目标: http://192.168.200.1/wordpress
+本地源码: /root/wordpress
+发现敏感文件: 5个
 成功收割凭据: 1个
-随机延时次数: 34次
+随机延时次数: 59次
 429重试次数: 0次
 
-## 敏感路径
-- http://192.168.200.1/DVWA/config/
-- http://192.168.200.1/DVWA/docs/
-- http://192.168.200.1/DVWA/external/
-- http://192.168.200.1/DVWA/vulnerabilities/
+## 敏感文件列表（远程存在但本地没有）
+- http://192.168.200.1/wordpress/shell.php (状态码: 200)
+- http://192.168.200.1/wordpress/backdoor.php (状态码: 200)
+- http://192.168.200.1/wordpress/test.php (状态码: 200)
+- http://192.168.200.1/wordpress/.htaccess (状态码: 403)
+- http://192.168.200.1/wordpress/.htpasswd (状态码: 403)
 
 ## 有效凭据
-1. admin:password
+1. wp_admin:123456
