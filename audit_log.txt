@@ -1,14 +1,32 @@
-# WordPress审计日志
-时间: 2026-06-16 05:54:52
+# WordPress资产审计日志
+生成时间: 2026-06-16 05:57:24
 目标: http://192.168.200.1/wordpress
+本地源码: /root/wordpress
 
-## 凭据
-wp_admin:123456
+## ========== CSRF Token信息 ==========
+Token类型: WordPress
+CSRF Token: dfa7fbb78c
 
-## 敏感文件
-- shell.php
-- backdoor.php
-- test.php
+## ========== 爆破结果 ==========
+总尝试次数: 16
+成功收割凭据: 1组
+是否提前停止: 是（已找到有效凭据）
 
-## 统计
-延时: 0次 | 429: 0次
+## ========== 限流处理统计 ==========
+随机延时次数: 4次
+429限流重试次数: 0次
+
+## ========== 有效凭据列表 ==========
+  [1] 账号: wp_admin  |  密码: 123456
+
+
+## ========== 敏感文件列表 ==========
+- http://192.168.200.1/wordpress/shell.php
+- http://192.168.200.1/wordpress/backdoor.php
+- http://192.168.200.1/wordpress/test.php
+- http://192.168.200.1/wordpress/.htaccess
+- http://192.168.200.1/wordpress/.htpasswd
+
+## ========== 扫描统计 ==========
+随机延时次数: 4次
+429重试次数: 0次
